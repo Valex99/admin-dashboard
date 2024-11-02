@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+
+  border: 1px solid red;
 }
 
 .container {
@@ -74,4 +76,177 @@ a:hover {
 
 .icon {
   filter: invert(100%);
+}
+
+/* Content style - nav bar */
+.nav-bar {
+    height: 160px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar-top {
+    height: 50%;
+    display: flex;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 50px;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.search-icon {
+    height: 50%;
+    cursor: pointer;
+    filter: invert(50%);
+}
+
+.input-field-div {
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: silver;
+    min-width: 250px;
+    max-width: 500px;
+    border: 1px solid silver;
+    cursor: pointer;
+}
+
+.notification-icon {
+    height: 40%;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    height: 80%;
+    border-radius: 100px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+
+.name-div {
+    font-weight: bold;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+/*Bottom nav*/
+.nav-bar-bottom {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    min-width: 770px;
+}
+
+.bigger-profile-pic {
+    border-radius: 100px;
+    height: 80%;
+    margin-left: 30px;
+}
+
+.greet-div {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+    /*Solve wrapping*/
+}
+
+.greeting {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.greeting-name {
+    font-size: 20px;
+}
+
+.button-div {
+    padding-right: 40px;
+    min-width: 350px;
+}
+
+.pill-button {
+    background-color: #2196F3; /* Button color (blue) */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    padding: 10px 20px; /* Padding for size */
+    border-radius: 20px; /* Makes the button rounded */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer; /* Shows pointer on hover */
+    display: inline-block;
+    text-align: center;
+    
+    margin-left: 30px;
+
+
+}
+
+.pill-button:hover {
+    background-color: #1E88E5; /* Slightly darker blue on hover */
+}
+
+/* Main content*/
+.main-content-div {
+    background-color: rgb(200, 200, 200);
+    width: 80%;
+    height: calc(100% - 160px);
+    padding: 20px;
+}
+
+
+
+
+/* Card */
+.card {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+
+    background-color: rgb(255, 255, 255);
+
+    position: relative;
+
+}
+
+.card-text-div {
+    height: 80%;
+}
+
+.card-icon-div {
+    height: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.card-icon {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.card-text {
+    font-weight: bold;
+}
+
+.yellow {
+    background-color: rgb(255, 170, 0);
+    position: absolute;
+    height: 200px;
+    width: 10px;
+    border-top-left-radius: 10px; /* Top-left corner */
+    border-bottom-left-radius: 10px; /* Bottom-left corner */
+    
+    top: 0px;
+    left: 0px;
 }
