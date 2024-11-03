@@ -5,80 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Font code -->
   </head>
   <body>
     <div class="container">
+      <!-- Sidebar -->
       <div class="sidebar">
-        <!-- Dashboard is a separate grid -->
+        <!-- Dashboard -->
         <div class="dashboard">
-          <img src="icons/view-dashboard.svg" alt="home-icon" class="icon" />
+          <img
+            src="icons/view-dashboard.svg"
+            alt="Dashboard-icon"
+            class="icon"
+          />
           <div class="dashboard-title">Dashboard</div>
         </div>
-        <!-- Now create a grid for every other item on menu -->
-        <!-- Let sidebar menu be a container that has grid applied to it -->
         <div class="sidebar-menu">
-          <!-- 1 -->
           <div class="option">
-            <img src="icons/home.svg" alt="home-icon" class="icon" />
+            <img src="icons/home.svg" alt="Home icon" class="icon" />
             <a href="/" class="title">Home</a>
           </div>
-          <!-- 2 -->
           <div class="option">
             <img
               src="icons/card-account-details-outline.svg"
-              alt="home-icon"
+              alt="Profile icon"
               class="icon"
             />
             <a href="/" class="title">Profile</a>
           </div>
-          <!-- 3 -->
           <div class="option">
-            <img src="icons/message.svg" alt="home-icon" class="icon" />
+            <img src="icons/message.svg" alt="Messages icon" class="icon" />
             <a href="/" class="title">Messages</a>
           </div>
-          <!-- 4 -->
           <div class="option">
-            <img src="icons/history.svg" alt="home-icon" class="icon" />
+            <img src="icons/history.svg" alt="History icon" class="icon" />
             <a href="/" class="title">History</a>
           </div>
-          <!-- 5 -->
           <div class="option">
-            <img src="icons/clipboard-text.svg" alt="home-icon" class="icon" />
-
+            <img src="icons/clipboard-text.svg" alt="Tasks icon" class="icon" />
             <a href="/" class="title">Tasks</a>
           </div>
-          <!-- 6 -->
           <div class="option">
-            <img src="icons/account-group.svg" alt="home-icon" class="icon" />
+            <img
+              src="icons/account-group.svg"
+              alt="Communities icon"
+              class="icon"
+            />
             <a href="/" class="title">Communities</a>
           </div>
-          <!-- 7 -->
           <div class="option settings">
-            <img src="icons/cog.svg" alt="home-icon" class="icon" />
+            <img src="icons/cog.svg" alt="Settings icon" class="icon" />
             <a href="/" class="title">Settings</a>
           </div>
-          <!-- 8 -->
           <div class="option">
-            <img src="icons/help-box.svg" alt="home-icon" class="icon" />
+            <img src="icons/help-box.svg" alt="Support icon" class="icon" />
             <a href="/" class="title">Support</a>
           </div>
-          <!-- 9 -->
           <div class="option">
-            <img src="icons/shield-check.svg" alt="home-icon" class="icon" />
+            <img src="icons/shield-check.svg" alt="Privacy icon" class="icon" />
             <a href="/" class="title">Privacy</a>
           </div>
         </div>
       </div>
+      <!-- End of sidebar - Start of navigator bar and content -->
       <div class="content">
         <div class="nav-bar">
+          <!-- Top half of nav bar -->
           <div class="nav-bar-top">
             <img
               src="icons/magnify.svg"
               alt="Search icon"
               class="search-icon"
             />
-
             <div class="input-field-div">
               <input type="text" />
             </div>
@@ -87,23 +84,23 @@
               alt="Notifications icon"
               class="notification-icon"
             />
-
             <img
-              src="icons/Sadio.png"
+              src="icons/Dawg.jpg.png"
               alt="Profile picture"
               class="profile-pic"
             />
-            <div class="name-div">Sadio Mane</div>
+            <div class="name-div">John Barkley</div>
           </div>
+          <!-- Bottom half of nav bar -->
           <div class="nav-bar-bottom">
             <img
-              src="icons/Sadio.png"
+              src="icons/Dawg.jpg.png"
               alt="Profile picture"
               class="bigger-profile-pic"
             />
             <div class="greet-div">
               <p class="greeting">Hi there,</p>
-              <p class="greeting-name">Sadio Mane (@branemane)</p>
+              <p class="greeting-name">John Barkley (@bigjohnnftdawg)</p>
             </div>
             <div class="button-div">
               <button class="pill-button">New</button>
@@ -112,11 +109,11 @@
             </div>
           </div>
         </div>
-        <!-- Place for content -->
         <div class="title-div">
           <p>Your Projects</p>
           <p class="announcements">Announcements</p>
         </div>
+        <!-- Main content grid + right side bar (Announcements + Trending)-->
         <div class="cards-announcements-trending">
           <div class="main-content-div">
             <!-- Card 1 -->
@@ -125,24 +122,25 @@
               <div class="card-text-div">
                 <p class="card-text">Super Cool Project</p>
                 <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
+                  Nisi inceptos finibus viverra molestie proin interdum ultrices
+                  montes. Turpis a sed; mauris nisl ligula morbi. Nisi
+                  sollicitudin netus posuere inceptos, posuere dictumst feugiat.
                 </p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -151,26 +149,27 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
+                <p class="card-text">Less Cool Project</p>
                 <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
+                  Viverra libero penatibus nibh ut habitant mi massa auctor.
+                  Phasellus pellentesque dapibus conubia magna egestas turpis
+                  dui.
                 </p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -179,26 +178,23 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
-                <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
-                </p>
+                <p class="card-text">Impossible project</p>
+                <p>Sed tempus ut lacus ut scelerisque.</p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -207,26 +203,27 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
+                <p class="card-text">Weather App</p>
                 <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
+                  In convallis sit; lacinia libero sem nulla vitae. Facilisi
+                  torquent laoreet orci luctus orci scelerisque dignissim. Ad
+                  iaculis mi parturient in mus.
                 </p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -235,26 +232,27 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
+                <p class="card-text">Rock Paper Scissors App</p>
                 <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
+                  Velit eu mi urna platea duis mattis. Eros himenaeos laoreet
+                  est libero id neque. Placerat nec praesent luctus sem tempus
+                  facilisi turpis.
                 </p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -263,26 +261,28 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
+                <p class="card-text">Reviews</p>
                 <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
+                  Velit eu mi urna platea duis mattis. Eros himenaeos laoreet
+                  est libero id neque. Placerat nec praesent luctus sem tempus
+                  facilisi turpis. Diam aptent euismod netus auctor semper
+                  pulvinar aliquam enim.
                 </p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -291,26 +291,28 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
+                <p class="card-text">Ad Blocker</p>
                 <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
+                  Viverra libero penatibus nibh ut habitant mi massa auctor.
+                  Phasellus pellentesque dapibus conubia magna egestas turpis
+                  dui. Diam aptent euismod netus auctor semper pulvinar aliquam
+                  enim.
                 </p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -319,7 +321,7 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
+                <p class="card-text">Schedule</p>
                 <p>
                   Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
                   nibh erat, id fallicsi felis accumsan nec.
@@ -328,17 +330,17 @@
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
@@ -347,36 +349,31 @@
             <div class="card">
               <div class="yellow"></div>
               <div class="card-text-div">
-                <p class="card-text">Super Cool Project</p>
-                <p>
-                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicutudin
-                  nibh erat, id fallicsi felis accumsan nec.
-                </p>
+                <p class="card-text">Mega Project</p>
+                <p>Sed tempus ut lacus ut scelerisque.</p>
               </div>
               <div class="card-icon-div">
                 <img
                   src="icons/star-plus-outline.svg"
-                  alt=""
+                  alt="Add favorites icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/eye-plus-outline.svg"
-                  alt=""
+                  alt="Add to watchlist icon"
                   class="card-icon"
                 />
                 <img
                   src="icons/share-variant-outline.svg"
-                  alt=""
+                  alt="Share icon"
                   class="card-icon"
                 />
               </div>
             </div>
-            <!-- Card 9 -->
           </div>
-          <!-- Closing div for main content -->
+          <!-- Right sidebar (Announcements + trending) -->
           <div class="announcements-trending">
             <div class="announcements-div">
-              <!-- Announcement 1 -->
               <div class="single-announcement">
                 <p class="card-text">Site maintenance</p>
                 <p class="announcement-text">
@@ -384,47 +381,68 @@
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <!-- Announcement 2 -->
               <div class="single-announcement">
-                <p class="card-text">Site maintenance</p>
+                <p class="card-text">Community Share Day</p>
                 <p class="announcement-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
+                  Libero tincidunt platea auctor in inceptos ullamcorper
+                  natoque. Est primis etiam conubia scelerisque elit auctor
+                  orci. Pulvinar dictum id auctor dis litora orci natoque.
                 </p>
               </div>
-              <!-- Announcement 3 -->
               <div class="single-announcement last-announcement">
-                <p class="card-text">Site maintenance</p>
+                <p class="card-text">Updated Privacy Policy</p>
                 <p class="announcement-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curae egestas lectus integer, metus natoque class eleifend id.
+                  Integer phasellus.
                 </p>
               </div>
-              <!-- Announcement end-->
             </div>
+            <p class="trending-title">Trending</p>
+            <!-- Trenging divs -->
             <div class="trending-div">
-              <p class="trending-title">Trending</p>
-              <!-- Profile 1 -->
+              <!-- Profiles (1) -->
               <div class="single-profile">
-                <img src="icons/Sadio.png" alt="Profile picture" class="trending-picture" />
+                <img
+                  src="icons/Nft1.png"
+                  alt="Profile picture"
+                  class="trending-picture"
+                />
                 <div class="name-description">
                   <p class="nickname">@tegan</p>
                   <p class="description">World Peace Builder</p>
                 </div>
               </div>
-              <!-- Profile 2 -->
               <div class="single-profile">
-                <img src="icons/Sadio.png" alt="Profile picture" class="trending-picture" />
+                <img
+                  src="icons/Nft2.png"
+                  alt="Profile picture"
+                  class="trending-picture"
+                />
                 <div class="name-description">
                   <p class="nickname">@morgan</p>
                   <p class="description">Super Cool Project</p>
                 </div>
               </div>
-              <!-- Profile 3 -->
               <div class="single-profile">
-                <img src="icons/Sadio.png" alt="Profile picture" class="trending-picture" />
+                <img
+                  src="icons/Nft3.png"
+                  alt="Profile picture"
+                  class="trending-picture"
+                />
                 <div class="name-description">
                   <p class="nickname">@kendall</p>
                   <p class="description">Life changing app</p>
+                </div>
+              </div>
+              <div class="single-profile">
+                <img
+                  src="icons/Nft4.png"
+                  alt="Profile picture"
+                  class="trending-picture"
+                />
+                <div class="name-description">
+                  <p class="nickname">@wolfi</p>
+                  <p class="description">The great wolf</p>
                 </div>
               </div>
             </div>

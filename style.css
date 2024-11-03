@@ -25,12 +25,11 @@
 }
 
 .dashboard-title {
-  height: 100%;
-  width: 100%;
   font-size: 30px;
 }
 
-.dashboard > img {
+.icon {
+  filter: invert(100%);
   width: 50px;
 }
 
@@ -39,13 +38,12 @@
   flex-direction: column;
   gap: 6px;
   padding: 20px;
-  /*font-family: "Exo", sans-serif;*/
 }
 
 .option {
   display: flex;
   align-items: center;
-  width: 100%;
+  /*width: 100%;*/
   gap: 10px;
 }
 
@@ -71,24 +69,19 @@ a:hover {
   margin-top: 60px;
 }
 
-.icon {
-  filter: invert(100%);
-}
-
 /* Content style - nav bar */
 .nav-bar {
   height: 160px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(10, 10, 10, 0.2);
 }
 
 .nav-bar-top {
   height: 50%;
   display: flex;
+  align-items: center;
   padding: 10px;
   padding-left: 30px;
   padding-right: 50px;
-  align-items: center;
-
   gap: 10px;
 }
 
@@ -96,6 +89,10 @@ a:hover {
   height: 50%;
   cursor: pointer;
   filter: invert(50%);
+}
+
+.search-icon:hover {
+  filter: invert(30%);
 }
 
 .input-field-div {
@@ -117,10 +114,18 @@ input {
   cursor: pointer;
 }
 
+input:hover {
+  border: 2px solid rgb(106, 106, 106);
+}
+
 .notification-icon {
   height: 40%;
   padding-left: 30px;
   cursor: pointer;
+}
+
+.notification-icon:hover {
+  filter: invert(30%);
 }
 
 .profile-pic {
@@ -136,6 +141,10 @@ input {
   cursor: pointer;
 }
 
+.name-div:hover {
+  color: rgb(93, 93, 93);
+}
+
 /*Bottom nav*/
 .nav-bar-bottom {
   height: 50%;
@@ -148,6 +157,7 @@ input {
   border-radius: 100px;
   height: 80%;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .greet-div {
@@ -171,55 +181,65 @@ input {
 }
 
 .pill-button {
-  background-color: #2196f3; /* Button color (blue) */
-  color: white; /* Text color */
-  border: none; /* Removes border */
-  padding: 10px 20px; /* Padding for size */
-  border-radius: 20px; /* Makes the button rounded */
-  font-size: 16px; /* Adjust font size as needed */
-  font-weight: bold; /* Makes the text bold */
-  cursor: pointer; /* Shows pointer on hover */
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
   display: inline-block;
   text-align: center;
-
   margin-left: 30px;
 }
 
 .pill-button:hover {
-  background-color: #1e88e5; /* Slightly darker blue on hover */
+  background-color: #1e88e5;
 }
 
 /* Main content*/
-.main-content-div {
+.cards-announcements-trending {
+  display: flex;
   background-color: rgb(200, 200, 200);
-  width: 80%;
+  width: 100%;
   height: calc(100% - 160px - 50px);
+}
+
+.main-content-div {
+  width: 80%;
+  height: minmax(calc(100% - 160px - 50px), auto-fit);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 20px;
-  /*row-gap: 58px;*/
 }
 
 /* Card */
 .card {
+  position: relative;
   height: 200px;
   width: 370px;
   border-radius: 10px;
   padding: 20px;
-
   background-color: rgb(255, 255, 255);
-
-  position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  background-color: rgb(223, 223, 223);
 }
 
 .card-text-div {
   height: 80%;
+}
+
+.card-text {
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .card-icon-div {
@@ -231,11 +251,11 @@ input {
 .card-icon {
   height: 25px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
-.card-text {
-  font-weight: bold;
-  margin-bottom: 8px;
+.card-icon:hover {
+  filter: invert(30%);
 }
 
 .yellow {
@@ -243,24 +263,15 @@ input {
   position: absolute;
   height: 200px;
   width: 10px;
-  border-top-left-radius: 10px; /* Top-left corner */
-  border-bottom-left-radius: 10px; /* Bottom-left corner */
-
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   top: 0px;
   left: 0px;
+  cursor: pointer;
 }
 
 .announcements {
   margin-right: 190px;
-}
-
-.cards-announcements-trending {
-  display: flex;
-  background-color: rgb(200, 200, 200);
-  width: 100%;
-
-  /* This was added */
-  height: calc(100% - 160px - 50px);
 }
 
 /* Announcements */
@@ -277,7 +288,7 @@ input {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(10, 10, 10, 0.2);
 }
 
@@ -308,7 +319,6 @@ input {
   font-weight: bold;
   background-color: rgb(200, 200, 200);
   font-size: 20px;
-
   padding-left: 25px;
   display: flex;
   align-items: end;
@@ -326,10 +336,21 @@ input {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
+  cursor: pointer;
 }
 
 .trending-picture {
   height: 50px;
   border-radius: 50px;
   margin-right: 18px;
+  cursor: pointer;
+}
+
+.name-description:hover {
+    color: rgb(108, 108, 108);
+}
+
+.card-text:hover {
+    color: rgb(108, 108, 108);
+    cursor: pointer;
 }
